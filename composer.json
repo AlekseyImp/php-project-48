@@ -1,6 +1,12 @@
 {
     "name": "hexlet/code",
+    "bin": [
+        "bin/gendiff"
+    ],
     "autoload": {
+        "files": [
+            "src/gendiff.php"
+        ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
@@ -11,5 +17,8 @@
             "email": "leha.petras1998@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "docopt/docopt": "^1.0",
+        "ext-json": "*"
+    }
 }
